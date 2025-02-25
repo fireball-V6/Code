@@ -148,81 +148,6 @@ box, the speed will be recalculated.</p>
     <input type="radio" name="axle" value="3.07" onclick="doAxle(value)">3.07:1<font size="-1"> (43/14)</font><br>
 </p></td>
 
-<td width="150" valign="top"><strong>Transfer Case</strong><p>
-
-    <p></p><b>Dana 18</b><br>
-    <dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
-    hi 1.00
-    </dt><dt><input type="radio" name="tcase" value="2.46" onclick="doTcase(value)">
-    low 2.46
-    </dt><dt><input type="radio" name="tcase" value="3.15" onclick="doTcase(value)">
-    Terra low 3.15
-    </dt><dt><input type="radio" name="tcase" value="5.13" onclick="doTcase(value)">
-    JPet low 5.13
-
-    <p></p><b>Dana 20</b>
-    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
-    hi 1.00
-    </dt><dt><input type="radio" name="tcase" value="2.03" onclick="doTcase(value)">
-    low 2.03
-    </dt><dt><input type="radio" name="tcase" value="3.15" onclick="doTcase(value)">
-    Terra low 3.15
-
-    <p></p><b>BW1339 Quadratrac</b>
-    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
-    hi 1.00
-    </dt><dt><input type="radio" name="tcase" value="2.57" onclick="doTcase(value)">
-    low 2.57
-
-    <p></p><b>NP231/NP242</b>
-    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
-    hi 1.00
-    </dt><dt><input type="radio" name="tcase" value="2.72" onclick="doTcase(value)">
-    low 2.72
-
-    <p></p><b>Rubicon NP241OR</b>
-    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
-    hi 1.00
-    </dt><dt><input type="radio" name="tcase" value="4.00" onclick="doTcase(value)">
-    low 4.00
-
-    <p></p><b>Dana 300</b>
-    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
-    hi 1.00
-    </dt><dt><input type="radio" name="tcase" value="2.62" onclick="doTcase(value)">
-    low 2.62
-    </dt><dt><input type="radio" name="tcase" value="4.00" onclick="doTcase(value)">
-    LoMax 4.00<p>
-
-    <p></p><b>Atlas Options</b>
-    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
-    hi 1.00
-    </dt><dt><input type="radio" name="tcase" value="3.00" onclick="doTcase(value)">
-    low 3.00
-    </dt><dt><input type="radio" name="tcase" value="3.80" onclick="doTcase(value)">
-    low 3.80
-    </dt><dt><input type="radio" name="tcase" value="4.30" onclick="doTcase(value)">
-    low 4.30
-    </dt><dt><input type="radio" name="tcase" value="5.00" onclick="doTcase(value)">
-    low 5.00<p>
-
-    <p></p><b>Rover LT230</b>
-    </dt><dt><input type="radio" name="tcase" value="1.0003" onclick="doTcase(value)">
-    hi 1.003
-    </dt><dt><input type="radio" name="tcase" value="1.100" onclick="doTcase(value)">
-    hi 1.10
-    </dt><dt><input type="radio" name="tcase" value="1.22" onclick="doTcase(value)">
-    hi 1.22
-    </dt><dt><input type="radio" name="tcase" value="1.301" onclick="doTcase(value)">
-    hi 1.301
-    </dt><dt><input type="radio" name="tcase" value="1.410" onclick="doTcase(value)">
-    hi 1.410
-    </dt><dt><input type="radio" name="tcase" value="1.667" onclick="doTcase(value)">
-    hi 1.667
-    </dt><dt><input type="radio" name="tcase" value="3.32" onclick="doTcase(value)">
-    low 3.32<p>
-</p></dt></td>
-
 <td width="100" valign="top"><strong>Transmission</strong>
     <p></p><b>3 Speeds</b>
     
@@ -287,7 +212,7 @@ box, the speed will be recalculated.</p>
     3rd 1.00
 </dt></td>
 <td width="100" valign="top"><br>
-    <p></p><b>Truck 4 speeds</b>
+    <p></p><b>Truck 4 Speeds</b>
 
     <p></p><b>T98/T18/T19</b>
     </dt><dt><input type="radio" name="trans" value="-7.44" onclick="doTrans(value)">
@@ -350,7 +275,7 @@ box, the speed will be recalculated.</p>
     4th 1.00
 </dt></td>
 <td width="100" valign="top"><br>
-    <p></p><b>Car 4 speeds</b>
+    <p></p><b>Car 4 Speeds</b>
 
     <p></p><b>Muncie M20 Wide Ratio</b>
     </dt><dt><input type="radio" name="trans" value="-3.16" onclick="doTrans(value)">
@@ -495,17 +420,103 @@ box, the speed will be recalculated.</p>
     6th 0.84
 </p></dt></td>
 
-<td width="120" valign="top"><strong>Between trans/tcase OD</strong><p>
+<td width="120" valign="top"><strong>Ahead of Tcase Doubler/OD</strong><p>
 <p>
     <b>Novak Novadrive</b>
     </p></dt><dt><input type="radio" name="midodradio" value="1.00" checked="" onclick="doMidOD(value)">
     normal 1.00
     </dt><dt><input type="radio" name="midodradio" value="0.75" onclick="doMidOD(value)">
     od 0.75<p>
+
+    <b>NP203 Doubler</b>
+    </p></dt><dt><input type="radio" name="midodradio" value="1.00" onclick="doMidOD(value)">
+    high 1.00
+    </dt><dt><input type="radio" name="midodradio" value="1.96" onclick="doMidOD(value)">
+    low 1.96<p>
+    
+    <b>D300 Strongbox Doubler</b>
+    </p></dt><dt><input type="radio" name="midodradio" value="1.00" onclick="MiddoOD(value)">
+    high 1.00
+    </dt><dt><input type="radio" name="midodradio" value="2.72" onclick="doMidOD(value)">
+    low 2.72<p>
 </p></dt></td>
 
+<td width="150" valign="top"><strong>Transfer Case</strong><p>
 
-<td width="120" valign="top"><strong>Overdrive/Doubler</strong><p>
+    <p></p><b>Dana 18</b><br>
+    <dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
+    hi 1.00
+    </dt><dt><input type="radio" name="tcase" value="2.46" onclick="doTcase(value)">
+    low 2.46
+    </dt><dt><input type="radio" name="tcase" value="3.15" onclick="doTcase(value)">
+    Terra low 3.15
+    </dt><dt><input type="radio" name="tcase" value="5.13" onclick="doTcase(value)">
+    JPet low 5.13
+
+    <p></p><b>Dana 20</b>
+    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
+    hi 1.00
+    </dt><dt><input type="radio" name="tcase" value="2.03" onclick="doTcase(value)">
+    low 2.03
+    </dt><dt><input type="radio" name="tcase" value="3.15" onclick="doTcase(value)">
+    Terra low 3.15
+
+    <p></p><b>BW1339 Quadratrac</b>
+    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
+    hi 1.00
+    </dt><dt><input type="radio" name="tcase" value="2.57" onclick="doTcase(value)">
+    low 2.57
+
+    <p></p><b>NP231/NP242</b>
+    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
+    hi 1.00
+    </dt><dt><input type="radio" name="tcase" value="2.72" onclick="doTcase(value)">
+    low 2.72
+
+    <p></p><b>Rubicon NP241OR</b>
+    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
+    hi 1.00
+    </dt><dt><input type="radio" name="tcase" value="4.00" onclick="doTcase(value)">
+    low 4.00
+
+    <p></p><b>Dana 300</b>
+    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
+    hi 1.00
+    </dt><dt><input type="radio" name="tcase" value="2.62" onclick="doTcase(value)">
+    low 2.62
+    </dt><dt><input type="radio" name="tcase" value="4.00" onclick="doTcase(value)">
+    LoMax 4.00<p>
+
+    <p></p><b>Atlas Options</b>
+    </dt><dt><input type="radio" name="tcase" value="1.00" onclick="doTcase(value)">
+    hi 1.00
+    </dt><dt><input type="radio" name="tcase" value="3.00" onclick="doTcase(value)">
+    low 3.00
+    </dt><dt><input type="radio" name="tcase" value="3.80" onclick="doTcase(value)">
+    low 3.80
+    </dt><dt><input type="radio" name="tcase" value="4.30" onclick="doTcase(value)">
+    low 4.30
+    </dt><dt><input type="radio" name="tcase" value="5.00" onclick="doTcase(value)">
+    low 5.00<p>
+
+    <p></p><b>Rover LT230</b>
+    </dt><dt><input type="radio" name="tcase" value="1.0003" onclick="doTcase(value)">
+    hi 1.003
+    </dt><dt><input type="radio" name="tcase" value="1.100" onclick="doTcase(value)">
+    hi 1.10
+    </dt><dt><input type="radio" name="tcase" value="1.22" onclick="doTcase(value)">
+    hi 1.22
+    </dt><dt><input type="radio" name="tcase" value="1.301" onclick="doTcase(value)">
+    hi 1.301
+    </dt><dt><input type="radio" name="tcase" value="1.410" onclick="doTcase(value)">
+    hi 1.410
+    </dt><dt><input type="radio" name="tcase" value="1.667" onclick="doTcase(value)">
+    hi 1.667
+    </dt><dt><input type="radio" name="tcase" value="3.32" onclick="doTcase(value)">
+    low 3.32<p>
+</p></dt></td>
+
+<td width="120" valign="top"><strong>PTO Port Overdrive/Doubler</strong><p>
 <p>
     <b>Warn/Saturn</b>
     </p></dt><dt><input type="radio" name="odradio" value="1.00" checked="" onclick="doOD(value)">
@@ -527,27 +538,15 @@ box, the speed will be recalculated.</p>
 
     <b>BW1339 Low Range Adapted to D18</b>
     </p></dt><dt><input type="radio" name="odradio" value="1.00" onclick="doOD(value)">
-    normal 1.00
+    high 1.00
     </dt><dt><input type="radio" name="odradio" value="2.57" onclick="doOD(value)">
-    high 2.57<p>
-
-    <b>NP203 Doubler</b>
-    </p></dt><dt><input type="radio" name="odradio" value="1.00" onclick="doOD(value)">
-    high 1.00
-    </dt><dt><input type="radio" name="odradio" value="1.96" onclick="doOD(value)">
-    low 1.96<p>
-    
-    <b>D300 Strongbox Doubler</b>
-    </p></dt><dt><input type="radio" name="odradio" value="1.00" onclick="doOD(value)">
-    high 1.00
-    </dt><dt><input type="radio" name="odradio" value="2.72" onclick="doOD(value)">
-    low 2.72<p>
+    low 2.57<p>
     
 </p></dt></td>
 
 <td valign="top">
 <table border="0">
-<tbody><tr><td width="100" valign="top"><strong>Calculation</strong></td>
+<tbody><tr><td width="150" valign="top" align="center" colspan="4" ><strong>Calculations</strong></td>
 </tr>
 <tr>
     <td align="right">Engine RPM</td>
@@ -561,7 +560,7 @@ box, the speed will be recalculated.</p>
     <td>: 1</td>
 </tr>
 <tr>
-    <td align="right">Between trans/tcase Overdrive Ratio</td>
+    <td align="right">Ahead of Tcase Doubler/OD</td>
     <td><input type="text" name="midod" size="5" value="1.0" onblur="calculate()"></td>
     <td>: 1</td>
 </tr>
