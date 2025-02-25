@@ -1,4 +1,3 @@
-
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Jeep Gearing Calculator</title>
 <script language="JavaScript">
@@ -14,13 +13,15 @@ function calculate()
     var enginerpm = document.speedForm.rpm.value;
     var tranny = document.speedForm.tranny.value;
     var tcratio = document.speedForm.tcgear.value;
+    var midod = document.speedForm.midod.value;
     var od = document.speedForm.od.value;
-    var totalgear = tranny*tcratio*od*axleratio;
+    var totalgear = tranny*tcratio*midod*od*axleratio;
     /*alert('diameter = '+diam
         +'\n axleratio = '+axleratio
         +'\n enginerpm = '+enginerpm
         +'\n tranny = '+tranny
         +'\n tcratio = '+tcratio
+        +'\n midod = '+midod
         +'\n od = '+od); */
     var circum =  pi * diam;
     var axlerpm = enginerpm/totalgear;	
@@ -53,6 +54,12 @@ function doTcase(tc)
 function doTrans(gear)
 {
     window.document.speedForm.tranny.value=gear;
+    calculate();
+}
+
+function doMidOD(gear)
+{
+    window.document.speedForm.midod.value=gear;
     calculate();
 }
 
@@ -486,16 +493,17 @@ box, the speed will be recalculated.</p>
     5th 1.00
     </dt><dt><input type="radio" name="trans" value="0.84" onclick="doTrans(value)">
     6th 0.84
-    </p></dt></td>
+</p></dt></td>
 
 <td width="120" valign="top"><strong>Between trans/tcase OD</strong><p>
 <p>
     <b>Novak Novadrive</b>
-    </p></dt><dt><input type="radio" name="odradio" value="1.00" checked="" onclick="doOD(value)">
+    </p></dt><dt><input type="radio" name="midodradio" value="1.00" checked="" onclick="doMidOD(value)">
     normal 1.00
-    </dt><dt><input type="radio" name="odradio" value="0.75" onclick="doOD(value)">
+    </dt><dt><input type="radio" name="midodradio" value="0.75" onclick="doMidOD(value)">
     od 0.75<p>
 </p></dt></td>
+
 
 <td width="120" valign="top"><strong>Overdrive/Doubler</strong><p>
 <p>
@@ -550,6 +558,11 @@ box, the speed will be recalculated.</p>
 <tr>
     <td align="right">Transmission Ratio</td>
     <td><input type="text" name="tranny" size="5" value="1.0" onblur="calculate()"></td>
+    <td>: 1</td>
+</tr>
+<tr>
+    <td align="right">Between trans/tcase Overdrive Ratio</td>
+    <td><input type="text" name="midod" size="5" value="1.0" onblur="calculate()"></td>
     <td>: 1</td>
 </tr>
 <tr>
