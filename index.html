@@ -118,7 +118,7 @@ box, the speed will be recalculated.</p>
 <table border="0" bgcolor="#fff4f0" cellpadding="3">
 <tbody><tr>
 <td width="75" valign="top"><strong>Tire size</strong><p>
-    <input type="radio" name="tireSize" value="27" onclick="doTire(value)">26"<br>
+    <input type="radio" name="tireSize" value="26" onclick="doTire(value)">26"<br>
     <input type="radio" name="tireSize" value="27" onclick="doTire(value)">27"<br>
     <input type="radio" name="tireSize" value="28" onclick="doTire(value)">28"<br>
     <input type="radio" name="tireSize" value="29" onclick="doTire(value)">29"<br> 
@@ -128,11 +128,12 @@ box, the speed will be recalculated.</p>
     <input type="radio" name="tireSize" value="33" onclick="doTire(value)">33"<br>
     <input type="radio" name="tireSize" value="34" onclick="doTire(value)">34"<br>
     <input type="radio" name="tireSize" value="35" onclick="doTire(value)">35"<br>
-    <input type="radio" name="tireSize" value="37" onclick="doTire(value)">36"<br>
-    <input type="radio" name="tireSize" value="27" onclick="doTire(value)">37"<br>
-    <input type="radio" name="tireSize" value="27" onclick="doTire(value)">38"<br>
-    <input type="radio" name="tireSize" value="27" onclick="doTire(value)">39"<br>
-    <input type="radio" name="tireSize" value="27" onclick="doTire(value)">40"<br>
+    <input type="radio" name="tireSize" value="36" onclick="doTire(value)">36"<br>
+    <input type="radio" name="tireSize" value="37" onclick="doTire(value)">37"<br>
+    <input type="radio" name="tireSize" value="38" onclick="doTire(value)">38"<br>
+    <input type="radio" name="tireSize" value="39" onclick="doTire(value)">39"<br>
+    <input type="radio" name="tireSize" value="40" onclick="doTire(value)">40"<br>
+    <input type="radio" name="tireSize" value="42" onclick="doTire(value)">42"<br>
 </p></td>
 <td width="150" valign="top"><strong>Axle Gears</strong><p>
     <input type="radio" name="axle" value="5.89" onclick="doAxle(value)">5.89:1<font size="-1"> (53/9)</font><br>
@@ -146,6 +147,8 @@ box, the speed will be recalculated.</p>
     <input type="radio" name="axle" value="3.54" onclick="doAxle(value)">3.54:1<font size="-1"> (46/13)</font><br>
     <input type="radio" name="axle" value="3.31" onclick="doAxle(value)">3.31:1<font size="-1"> (43/13)</font><br>
     <input type="radio" name="axle" value="3.07" onclick="doAxle(value)">3.07:1<font size="-1"> (43/14)</font><br>
+    <input type="radio" name="axle" value="2.94" onclick="doAxle(value)">2.94:1<font size="-1"> (47/16)</font><br>
+    <input type="radio" name="axle" value="2.72" onclick="doAxle(value)">2.72:1<font size="-1"> (41/15)</font><br>
 </p></td>
 
 <td width="100" valign="top"><strong>Transmission</strong>
@@ -275,7 +278,7 @@ box, the speed will be recalculated.</p>
     4th 1.00
 </dt></td>
 <td width="100" valign="top"><br>
-    <p></p><b>Car 4 Speeds</b>
+    <p></p><b>Light Duty 4 Speeds</b>
 
     <p></p><b>Muncie M20 Wide Ratio</b>
     </dt><dt><input type="radio" name="trans" value="-3.16" onclick="doTrans(value)">
@@ -300,7 +303,19 @@ box, the speed will be recalculated.</p>
     3rd 1.28
     </dt><dt><input type="radio" name="trans" value="1.00" onclick="doTrans(value)">
     4th 1.00
-    
+	    
+    <p></p><b>Jeep T-4</b>
+    </dt><dt><input type="radio" name="trans" value="-3.76" onclick="doTrans(value)">
+    R 3.76
+    </dt><dt><input type="radio" name="trans" value="4.03" onclick="doTrans(value)">
+    1st 4.03
+    </dt><dt><input type="radio" name="trans" value="2.37" onclick="doTrans(value)">
+    2nd 2.37
+    </dt><dt><input type="radio" name="trans" value="1.50" onclick="doTrans(value)">
+    3rd 1.50
+    </dt><dt><input type="radio" name="trans" value="1.00" onclick="doTrans(value)">
+    4th 1.00
+	    
     <p></p><b>RTS Overdrive</b>
     </dt><dt><input type="radio" name="trans" value="-3.25" onclick="doTrans(value)">
     R 3.25
@@ -356,19 +371,19 @@ box, the speed will be recalculated.</p>
     </dt><dt><input type="radio" name="trans" value="0.78" onclick="doTrans(value)">
     5th 0.78
 
-    <p></p><b>T-5</b>
-    </dt><dt><input type="radio" name="trans" value="-3.15" onclick="doTrans(value)">
-    R 3.15
-    </dt><dt><input type="radio" name="trans" value="3.35" onclick="doTrans(value)">
-    1st 3.35
-    </dt><dt><input type="radio" name="trans" value="1.99" onclick="doTrans(value)">
-    2nd 1.99
-    </dt><dt><input type="radio" name="trans" value="1.33" onclick="doTrans(value)">
-    3rd 1.33
+    <p></p><b>Jeep T-5</b>
+    </dt><dt><input type="radio" name="trans" value="-3.76" onclick="doTrans(value)">
+    R 3.76
+    </dt><dt><input type="radio" name="trans" value="4.03" onclick="doTrans(value)">
+    1st 4.03
+    </dt><dt><input type="radio" name="trans" value="2.37" onclick="doTrans(value)">
+    2nd 2.37
+    </dt><dt><input type="radio" name="trans" value="1.50" onclick="doTrans(value)">
+    3rd 1.50
     </dt><dt><input type="radio" name="trans" value="1.00" onclick="doTrans(value)">
     4th 1.00
-    </dt><dt><input type="radio" name="trans" value="0.68" onclick="doTrans(value)">
-    5th 0.68
+    </dt><dt><input type="radio" name="trans" value="0.86" onclick="doTrans(value)">
+    5th 0.86
     
     <p></p><b>TR4050</b>
     </dt><dt><input type="radio" name="trans" value="-6.03" onclick="doTrans(value)">
